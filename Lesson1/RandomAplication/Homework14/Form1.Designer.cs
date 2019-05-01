@@ -30,8 +30,8 @@
         {
             this.btnResult = new System.Windows.Forms.Button();
             this.lblNumber = new System.Windows.Forms.Label();
-            this.lblResult = new System.Windows.Forms.Label();
             this.txtNumber = new System.Windows.Forms.TextBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnResult
@@ -62,18 +62,6 @@
             this.lblNumber.TabIndex = 1;
             this.lblNumber.Text = "Число";
             // 
-            // lblResult
-            // 
-            this.lblResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.lblResult.Location = new System.Drawing.Point(116, 113);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 17);
-            this.lblResult.TabIndex = 2;
-            // 
             // txtNumber
             // 
             this.txtNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -85,17 +73,26 @@
             this.txtNumber.Size = new System.Drawing.Size(192, 35);
             this.txtNumber.TabIndex = 3;
             // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(43, 104);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(192, 35);
+            this.txtResult.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 250);
+            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtNumber);
-            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.btnResult);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Автоморфное число";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,8 +102,8 @@
 
         private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.Label lblNumber;
-        private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.TextBox txtResult;
     }
 }
 

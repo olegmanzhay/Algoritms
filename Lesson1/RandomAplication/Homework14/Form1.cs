@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Автоморфные числа. Натуральное число называется автоморфным, если оно равно последним цифрам своего квадрата.
+ * Например, 25 \ :sup: '2' = 625. Напишите программу, которая получает на вход натуральное число N и выводит на экран 
+ * все автоморфные числа, не превосходящие N.
+ Манжай Олег
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +27,7 @@ namespace Homework14
         {
             Numbers nmb = new Numbers();
             nmb.Number = int.Parse(txtNumber.Text);
-            lblResult.Text = nmb.resultNumbers(nmb);
+            txtResult.Text = nmb.resultNumbers(nmb);
         }
     }
 }
