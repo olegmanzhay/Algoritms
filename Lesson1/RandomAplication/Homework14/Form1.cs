@@ -16,5 +16,12 @@ namespace Homework14
         {
             InitializeComponent();
         }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            Numbers nmb = new Numbers();
+            nmb.Number = int.Parse(txtNumber.Text);
+            lblResult.Text = nmb.resultNumbers(nmb);
+        }
     }
 }
